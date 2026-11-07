@@ -553,3 +553,100 @@ body {
     .info-text-block em { font-size: 0.55rem; }
     .info-text-block strong { font-size: 0.63rem; }
 }
+
+/* =========================================
+   SECÇÃO DE CONFIRMAÇÃO (RSVP)
+========================================= */
+.rsvp-section {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 25px 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(15, 92, 95, 0.2);
+    max-width: 460px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.rsvp-section h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.25rem;
+    color: #0f5c5f;
+    margin: 6px 0 10px;
+}
+
+.rsvp-section h3 {
+    color: #0f5c5f;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-family: 'Cinzel', serif;
+}
+
+.rsvp-section p {
+    color: #072d2e;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.status-options {
+    display: flex;
+    gap: 10px;
+    margin: 15px auto;
+    max-width: 320px;
+}
+
+.status-card {
+    flex: 1;
+    cursor: pointer;
+}
+
+.status-card input[type="radio"] {
+    display: none;
+}
+
+.card-content {
+    border: 1px solid rgba(15, 92, 95, 0.3);
+    padding: 12px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    transition: all 0.2s ease;
+    font-size: 0.85rem;
+    color: #072d2e;
+}
+
+.status-card input[type="radio"]:checked + .card-content {
+    border-color: #0f5c5f;
+    background: #c8f1e9;
+    color: #0f5c5f;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(15, 92, 95, 0.15);
+}
+
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25d366;
+    color: white;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 5px 14px rgba(37, 211, 102, 0.3);
+    transition: background 0.2s ease;
+}
+
+.whatsapp-button:hover {
+    background: #1da851;
+}
+
+.hidden {
+    display: none !important;
+}

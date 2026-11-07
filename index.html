@@ -67,10 +67,10 @@
                 <div class="left-column">
                     <div class="identity-row">
                         <div class="mirror-frame">
-                            <img src="foto/casal.jpeg" alt="Fotografia dos noivos">
+                            <img src="foto/foto2.jpeg" alt="Fotografia dos noivos">
                         </div>
                         <h1 class="couple-names">
-                            Suzalino
+                            Suzarino
                             <span>&</span>
                             Ivete
                         </h1>
@@ -124,8 +124,9 @@
                 </div>
             </section>
 
-            <hr class="separator-line">
+                        <hr class="separator-line">
 
+            <!-- PROGRAMA DO DIA -->
             <section class="program-section">
                 <h2 class="section-title">Programa do Dia</h2>
                 <div class="timeline">
@@ -154,8 +155,47 @@
                 <em>Localização do Salão (Festa)</em>
                 <strong>Tete-Bairro Azul GPZ</strong>
             </footer>
+
+            <!-- =========================================
+                 SECÇÃO DE CONFIRMAÇÃO (RSVP)
+            ========================================== -->
+            <section class="rsvp-section">
+                <span class="eyebrow" style="font-size: 0.65rem;">Este convite foi preparado para</span>
+                <h4 id="nomeConvidadoTela">A carregar...</h4>
+                
+
+                <h3>Contamos contigo?</h3>
+                <p>Por favor, seleciona uma opção abaixo para responder via WhatsApp .</p>
+                
+                <!-- Cards Interativos de Opções -->
+                <div class="status-options">
+                    <label class="status-card">
+                        <input type="radio" name="escolhaPresenca" value="Sim" id="radioSim">
+                        <div class="card-content">
+                            <span class="status-icon">✓</span>
+                            <span>Sim, irei!</span>
+                        </div>
+                    </label>
+
+                    <label class="status-card">
+                        <input type="radio" name="escolhaPresenca" value="Não" id="radioNao">
+                        <div class="card-content">
+                            <span class="status-icon">✕</span>
+                            <span>Não poderei ir</span>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- Botão do WhatsApp -->
+                <a href="#" class="whatsapp-button" id="whatsappLink" style="margin-top: 20px; display: inline-flex;">
+                    <span>📱</span> Responder por WhatsApp
+                </a>
+            </section>
+
         </div>
     </main>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
